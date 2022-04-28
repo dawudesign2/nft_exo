@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* Primary */
+    --softBlue:  hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral main bg */
+    --veryDarkBlueBg: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%); 
+    /* Font size */
+    -fontPara: 18px;
+}
+
+body {
+    font-family: Outfit;
+}
+
+.main {
+    background-color: var(--veryDarkBlueBg);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft_container {
+    background-color:var(--veryDarkBlueCard);
+    width: 351px;
+    border-radius: 15px;
+}
+.nft_image {
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+}
+.nft_image img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 9px;
+}
+.nft_content {
+    margin: 27px 27px 15px;
+    color: var(--white);
+}
+.nft_content h2 {
+    padding-bottom: 15px;
+}
+.nft_content p {
+    color: var(--softBlue);
+    inline-size: 270px;
+    overflow-wrap: break-word;
+}
+.nft_content_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.content_info_right,
+.content_info_left {
+    display: flex;
+}
+
+.content_info_right img,
+.content_info_left img {
+    height: auto;
+    object-fit: contain;
+}
+.content_info_right span,
+.content_info_left span {
+    padding-left: 9px;
+}
+
+.content_info_right span {
+    color: var(--cyan);
+    font-weight: 600;
+}
+.content_info_left span {
+    color: var(--softBlue);
+}
+.nft_footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 21px 27px;
+}
+.nft_footer img {
+    width: 36px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nft_footer p {
+    color: var(--softBlue);
+}
+
+.nft_footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nft_line {
+   border-top: 1px solid var(--veryDarkBlueLine);
+   width: 300px;
+
+   margin:  0 auto;
+
+   padding-bottom: 21px;
+}
